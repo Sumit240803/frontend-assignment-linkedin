@@ -7,6 +7,7 @@ import About from './About'
 import WhyRegisterKaro from './WhyRegisterKaro'
 import IntroVide from './IntroVide'
 import Clients from './Clients'
+import Explore from './Explore'
 
 const Main = () => {
   return (
@@ -34,6 +35,9 @@ const Main = () => {
         </div>
         <div>
             <Clients/>
+        </div>
+        <div>
+            <Explore/>
         </div>
     </div>
   )

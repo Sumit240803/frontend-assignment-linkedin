@@ -1,0 +1,73 @@
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 100px;
+    margin-top: 20px;
+    justify-content: center; /* Centers cards horizontally */
+    align-items: center; /* Centers cards vertically (if there's enough height) */
+    padding: 20px; /* Optional: Add padding for spacing */
+  }
+  
+  .card {
+    border: 1px solid #dddddd00;
+    border-radius: 8px;
+    padding: 16px;
+    width: 300px;
+    height: 300px;
+    gap: 12px;
+    
+  }
+  
+  .card-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 4px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+  }
+  
+  .tags {
+    margin-top: 18px;
+  }
+  
+  .tag {
+    display: inline-block;
+    background: #007BFF;
+    color: white;
+    padding: 4px 8px;
+    margin-right: 4px;
+    border-radius: 4px;
+    font-size: 12px;
+  }
+  
+  .author{
+    color: #667085;
+  }
+
+  .card-title{
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .card-desc{
+    color: #667085;
+    font-size: 15px;
+  }
+
+  .explore-heading {
+    text-align: center;
+    margin-top: 40px;
+  }
+  .explore-heading p{
+    color: #EB8D15;
+    margin-bottom: 10px;
+  }
+
+  .show{
+    background-color: #1C4670;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+  }
