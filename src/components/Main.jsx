@@ -11,6 +11,8 @@ import Explore from './Explore'
 import Reviews from './Reviews'
 import Faq from './FAQ'
 import Download from './Download'
+import End from './End'
+import EndFooter from './Footer'
 
 const Main = () => {
   return (
@@ -53,6 +55,12 @@ const Main = () => {
         </div>
         <div style={{"overflow-x" : "hidden"}}>
             <img src="/why.png" alt="" />
+        </div>
+        <div>
+            <End/>
+        </div>
+        <div>
+            <EndFooter/>
         </div>
     </div>
   )

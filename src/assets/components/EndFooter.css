@@ -1,0 +1,17 @@
+.end-footer{
+    background-color: #011B5B;
+    color: #AAB5CD;
+    display: flex;
+    gap: 100px;
+    padding: 40px;
+}
+.end-footer h4{
+    color: #FFA229;
+}
+.list{
+    list-style-type: none;
+}
+
+.footer-info{
+    width: 240px;
+}

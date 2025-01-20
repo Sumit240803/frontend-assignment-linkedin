@@ -1,0 +1,40 @@
+.end{
+    background: linear-gradient(45deg, #FFA229, #1C4670);
+    padding: 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    overflow-x: hidden;
+}
+
+.info{
+    display: flex;
+    gap: 30px;
+    padding: 20px;
+    color: white;
+}
+.input{
+    display: flex;
+    border-radius: 10px;
+    margin-top:20px ;
+}
+.input input{
+    padding: 10px;
+    width: 400px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border: none;
+    
+}
+
+.input button{
+background-color: #FFA229;
+border: none;
+color: white;
+padding: 10px;
+border-top-right-radius: 10px;
+border-bottom-right-radius: 10px;
+}
