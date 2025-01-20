@@ -1,4 +1,4 @@
-/* General Styles */
+
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -20,7 +20,7 @@ body {
     position: relative;
   }
   
-  /* Text Section */
+
   .text-section {
     flex: 1;
     max-width: 600px;
@@ -70,7 +70,7 @@ body {
     color: #007bff;
   }
   
-  /* Stats Section */
+
   .stats {
     display: flex;
     gap: 20px;
@@ -86,36 +86,17 @@ body {
     font-size: 1.5rem;
     color: #333;
   }
-  
-  /* Image Section */
+
   .image-section img {
     max-width: 100%;
     height: auto;
   }
   
-  /* Services Section */
-  .services-section {
-    position: absolute;
-    top: 50px;
-    right: 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
+  @media (max-width: 768px){
+    .btn-primary{
+      margin-bottom: 10px;
+    }
   }
-  
-  .services-section button {
-    background-color: #f8f9fa;
-    border: 1px solid #ddd;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 0.9rem;
-    text-align: left;
-    color: #333;
-  }
-  
-  .services-section button:hover {
-    background-color: #007bff;
-    color: #fff;
-  }
+
+
   

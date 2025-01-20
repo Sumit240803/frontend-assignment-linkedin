@@ -1,40 +1,90 @@
-.end{
+.end {
     background: linear-gradient(45deg, #FFA229, #1C4670);
-    padding: 90px;
+    padding: 60px 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
     color: white;
-    overflow-x: hidden;
-}
-
-.info{
+  }
+  
+  .info {
     display: flex;
-    gap: 30px;
+    flex-wrap: wrap;
+    gap: 20px;
     padding: 20px;
     color: white;
-}
-.input{
+    justify-content: center; 
+  }
+  
+  .input {
     display: flex;
     border-radius: 10px;
-    margin-top:20px ;
-}
-.input input{
-    padding: 10px;
-    width: 400px;
+    margin-top: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .input input {
+    padding: 12px;
+    width: 300px;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
     border: none;
-    
-}
-
-.input button{
-background-color: #FFA229;
-border: none;
-color: white;
-padding: 10px;
-border-top-right-radius: 10px;
-border-bottom-right-radius: 10px;
-}
+    outline: none;
+    font-size: 1rem;
+  }
+  
+  .input button {
+    background-color: #FFA229;
+    border: none;
+    color: white;
+    padding: 12px 20px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .input button:hover {
+    background-color: #d9861d; 
+  }
+  
+  .end-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    margin-top: 20px;
+    display: block;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .input input {
+      width: 70%; 
+    }
+  
+    .info {
+      gap: 15px;
+      padding: 10px;
+      font-size: 0.9rem; 
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .input input {
+      width: 200px; 
+      font-size: 0.9rem;
+    }
+  
+    .input button {
+      font-size: 0.9rem;
+      padding: 10px 15px;
+    }
+  
+    .info {
+      gap: 10px;
+    }
+  }
+  

@@ -1,36 +1,112 @@
 .vid-component {
     background-color: #1C4670;
     display: flex;
+    flex-direction: row; /* Default for larger screens */
     color: white;
-    
-}
-
-.vid-main-section-1{
+    padding: 20px; /* Added padding for spacing */
+    gap: 20px; /* Space between sections */
+  }
+  
+  .vid-main-section-1 {
     display: flex;
     padding: 20px;
-}
-
-
-.main-heading-section{
+    gap: 15px; /* Space between icon and text */
+  }
+  
+  .main-heading-section {
     padding: 20px;
     margin-top: 50px;
-}
-.main-heading-section p{
-    color:#AAB5CD;
-}
-.main-heading-section p{
+  }
+  
+  .main-heading-section p {
+    color: #AAB5CD;
     margin-top: 30px;
-}
-
-.vid-img{
+  }
+  
+  .vid-img {
     padding: 50px;
-}
-
-.icon-img{
+    max-width: 100%; /* Ensure the image scales responsively */
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  .icon-img {
     padding-right: 10px;
-}
-
-.main-section-info p{
+    width: 40px; /* Define a fixed size for icons */
+    height: 40px;
+  }
+  
+  .main-section-info p {
     margin-top: 10px;
-    color:#AAB5CD;
-}
+    color: #AAB5CD;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    .vid-component {
+      flex-direction: column; /* Stack items vertically */
+      align-items: center; /* Center align content */
+      text-align: center; /* Center text */
+    }
+  
+    .vid-main-section-1 {
+      flex-direction: column; /* Stack icon and text vertically */
+      align-items: center; /* Center align content */
+      text-align: center; /* Center text */
+    }
+  
+    .icon-img {
+      margin-bottom: 10px; /* Add spacing below the icon */
+    }
+  
+    .main-heading-section {
+      margin-top: 30px; /* Adjust margin for smaller screens */
+      padding: 15px;
+    }
+  
+    .vid-img {
+      padding: 20px; /* Reduce padding for smaller screens */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .main-heading-section h1 {
+      font-size: 1.8rem; /* Adjust heading size */
+    }
+  
+    .main-heading-section p {
+      font-size: 1rem; /* Adjust paragraph font size */
+    }
+  
+    .vid-main-section-1 {
+      padding: 15px; /* Reduce padding */
+    }
+  
+    .icon-img {
+      width: 35px; /* Reduce icon size */
+      height: 35px;
+    }
+  
+    .vid-img {
+      padding: 15px; /* Reduce padding */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .main-heading-section h1 {
+      font-size: 1.5rem; /* Further reduce heading size */
+    }
+  
+    .main-heading-section p {
+      font-size: 0.9rem; /* Smaller paragraph font size */
+    }
+  
+    .icon-img {
+      width: 30px; /* Smaller icon size */
+      height: 30px;
+    }
+  
+    .vid-img {
+      padding: 10px; /* Further reduce padding */
+    }
+  }
+  

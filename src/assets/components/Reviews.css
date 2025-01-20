@@ -1,65 +1,135 @@
-.reviews{
+.reviews {
     background-color: #1C4670;
-    padding: 20px;
-}
-.reviews-heading{
+    padding: 20px 40px; /* Add side padding for better layout */
+  }
+  
+  .reviews-heading {
     display: flex;
     justify-content: space-between;
-    padding: 30px;
-}
-.reviews-heading h1{
+    align-items: center;
+    padding: 30px 0;
+  }
+  
+  .reviews-heading h1 {
     color: white;
-}
-.arrows{
+    font-size: 1.8rem;
+  }
+  
+  .arrows {
     display: flex;
     align-items: center;
     gap: 12px;
-}
-.prev , .next{
-    
+  }
+  
+  .prev,
+  .next {
     border-radius: 100%;
-    
     text-align: center;
     padding: 10px;
-    margin: auto;
-    
-}
-.prev{
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  .prev {
     background-color: white;
     color: #1478F1;
-    font-size: 20px;
-}
-.next{
+  }
+  
+  .next {
     background-color: #FFA229;
     border: 1px solid white;
     color: white;
-}
-
-.people-card{
+  }
+  
+  .people-card {
     background-color: white;
     width: 40%;
     border-radius: 10px;
     padding: 20px;
+    display: flex;
+    flex-direction: column;
     gap: 20px;
-}
-
-.top{
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for a modern look */
+  }
+  
+  .top {
     display: flex;
     justify-content: space-between;
-}
-.review-one{
+  }
+  
+  .review-one {
     margin-right: 20px;
-}
-.people-reviews{
+  }
+  
+  .review-text {
+    padding: 10px 0;
+    font-size: 0.95rem;
+    color: #666666;
+    line-height: 1.6;
+  }
+  
+  .people-reviews {
     display: flex;
     justify-content: space-around;
-
-}
-.people{
+    gap: 20px; /* Add spacing between cards */
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+  }
+  
+  .people {
     display: flex;
     align-items: center;
     gap: 10px;
-}
-.review-text{
-    padding: 10px;
-}
+  }
+  
+  .people img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .reviews-heading {
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+  
+    .reviews-heading h1 {
+      text-align: center;
+      font-size: 1.5rem;
+    }
+  
+    .arrows {
+      justify-content: center;
+    }
+  
+    .people-card {
+      width: 80%; /* Reduce card size on smaller screens */
+    }
+  
+    .people-reviews {
+      gap: 30px; /* Increase spacing between cards */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .reviews-heading h1 {
+      font-size: 1.3rem;
+    }
+  
+    .people-card {
+      width: 100%; /* Full width for very small screens */
+    }
+  
+    .review-text {
+      font-size: 0.85rem;
+    }
+  
+    .prev,
+    .next {
+      padding: 8px;
+      font-size: 18px;
+    }
+  }
+  

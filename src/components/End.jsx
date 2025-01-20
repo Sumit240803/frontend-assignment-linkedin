@@ -21,7 +21,7 @@ const End = () => {
     </div>
     <div style={{"overflow-x" : "hidden"}} >
 
-    <img src="/Content.png" alt="" />
+    <img className='end-image' src="/Content.png" alt="" />
     </div>
     </div>
   )

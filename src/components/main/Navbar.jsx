@@ -7,9 +7,7 @@ const Navbar = () => {
         <div className='top-nav'>
             <p>www.registerkaro.in</p>
             <p>+91 8447746183</p>
-            <p>L</p>
-            <p>L</p>
-            <p>L</p>
+            
         </div>
         <div className='main-nav'>
             <img className='logo' src="/fullLogo.jpg" alt="logo" />

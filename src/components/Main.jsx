@@ -53,9 +53,7 @@ const Main = () => {
         <div>
             <Download/>
         </div>
-        <div style={{"overflow-x" : "hidden"}}>
-            <img src="/why.png" alt="" />
-        </div>
+        
         <div>
             <End/>
         </div>

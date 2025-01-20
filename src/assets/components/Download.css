@@ -1,31 +1,122 @@
-.download{
+.download {
     background-color: #1C4670;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
     width: 100%;
     height: 550px;
+    padding: 40px;
     overflow-y: hidden;
-    
-   
-}
-.download-desc h1{
+  }
+  
+  .download-desc {
+    flex: 1;
+    padding: 20px 40px; /* Adjust padding for better spacing */
+  }
+  
+  .download-desc h1 {
     color: white;
-
-}
-.download-desc p{
+    font-size: 2rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+  
+  .download-desc p {
     color: #AAB5CD;
-    font-size: 14px;
+    font-size: 1rem;
+    line-height: 1.6;
     margin-top: 10px;
-}
-.download-desc{
-    padding: 100px;
-}
-.download-app{
-    padding: 90px;
+  }
+  
+  .download-app {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
     align-items: center;
     text-align: center;
-    
-}
-.download-app h3{
+    gap: 20px; /* Add spacing between elements */
+  }
+  
+  .download-app h3 {
     color: white;
-    padding-bottom: 10px;
-}
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .download-app div {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .download-app img {
+    width: 150px;
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .download-app img:hover {
+    transform: scale(1.05);
+  }
+  
+  .mobile {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .mobile img {
+    width: 80%;
+    max-width: 400px;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    .download {
+      flex-direction: column;
+      height: auto;
+      padding: 20px;
+    }
+  
+    .download-desc,
+    .download-app {
+      text-align: center;
+      padding: 20px;
+    }
+  
+    .mobile img {
+      width: 70%;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .download-desc h1 {
+      font-size: 1.5rem;
+    }
+  
+    .download-app img {
+      width: 120px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .download-desc h1 {
+      font-size: 1.3rem;
+    }
+  
+    .download-desc p {
+      font-size: 0.9rem;
+    }
+  
+    .download-app img {
+      width: 100px;
+    }
+  
+    .mobile img {
+      width: 60%;
+    }
+  }
+  

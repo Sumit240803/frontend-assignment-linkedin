@@ -1,20 +1,59 @@
-.clients{
-    width: 1380px;
-}
-.clients-heading{
+.clients {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .clients-heading {
     text-align: center;
     margin-top: 40px;
-}
-.clients-heading p{
-    width: 65%;
+    padding: 0 20px; /* Add padding for better spacing on smaller screens */
+  }
+  
+  .clients-heading p {
+    max-width: 65%;
     margin: auto;
-    color:#666666;
+    color: #666666;
     margin-top: 20px;
     margin-bottom: 50px;
-}
-
-
-.fill{
+    line-height: 1.6; /* Better readability */
+  }
+  
+  .fill {
     margin-top: 60px;
     width: 100%;
-}
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .clients-heading h1 {
+      font-size: 1.8rem; /* Adjust heading size */
+    }
+  
+    .clients-heading p {
+      max-width: 90%; /* Allow more space for text */
+      font-size: 0.9rem;
+    }
+  
+    .clients {
+      width: 100%; /* Ensure it scales with the viewport */
+    }
+  
+    .fill {
+      margin-top: 30px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .clients-heading h1 {
+      font-size: 1.5rem; /* Smaller heading on very small screens */
+    }
+  
+    .clients-heading p {
+      font-size: 0.8rem;
+    }
+  
+    .fill {
+      margin-top: 20px;
+    }
+  }
+  

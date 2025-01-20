@@ -44,13 +44,8 @@ const Hero = () => {
           <img src="/img.png" alt="Business Illustration" />
         </div>
 
-        {/* Services Section */}
-        <div className="services-section">
-          <button>Annual Compliance</button>
-          <button>Payroll Services</button>
-          <button>Company Formation</button>
-          <button>Annual Compliance</button>
-        </div>
+        
+        
       </div>
     </div>
   );

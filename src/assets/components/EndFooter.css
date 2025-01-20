@@ -1,17 +1,69 @@
-.end-footer{
+.end-footer {
     background-color: #011B5B;
     color: #AAB5CD;
     display: flex;
-    gap: 100px;
-    padding: 40px;
-}
-.end-footer h4{
+    flex-wrap: wrap; /* Enable wrapping for smaller screens */
+    justify-content: space-between; /* Distribute space evenly */
+    gap: 40px; /* Reduced gap for better spacing */
+    padding: 40px 20px;
+  }
+  
+  .end-footer h4 {
     color: #FFA229;
-}
-.list{
+    margin-bottom: 15px;
+  }
+  
+  .list {
     list-style-type: none;
-}
-
-.footer-info{
-    width: 240px;
-}
+    padding: 0;
+    margin: 0;
+  }
+  
+  .list li {
+    margin-bottom: 10px; /* Space between list items */
+    cursor: pointer;
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
+  }
+  
+  .list li:hover {
+    color: #FFA229; /* Highlight color on hover */
+  }
+  
+  .footer-info {
+    flex: 1;
+    min-width: 240px; /* Ensure consistent size for text section */
+    max-width: 300px; /* Prevent it from growing too large */
+    margin-bottom: 20px; /* Space for small screens */
+  }
+  
+  .end-footer div {
+    flex: 1;
+    min-width: 200px; /* Ensure consistent column width */
+  }
+  
+  @media (max-width: 768px) {
+    .end-footer {
+      gap: 20px; /* Adjust gap for tablets */
+      padding: 20px;
+    }
+  
+    .end-footer div {
+      min-width: 160px; /* Reduce column size for smaller devices */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .end-footer {
+      flex-direction: column; /* Stack items vertically */
+      gap: 30px;
+    }
+  
+    .footer-info {
+      text-align: center; /* Center align text for better aesthetics */
+    }
+  
+    .end-footer div {
+      text-align: center; /* Align other sections as well */
+    }
+  }
+  
