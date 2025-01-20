@@ -8,6 +8,7 @@ import WhyRegisterKaro from './WhyRegisterKaro'
 import IntroVide from './IntroVide'
 import Clients from './Clients'
 import Explore from './Explore'
+import Reviews from './Reviews'
 
 const Main = () => {
   return (
@@ -38,6 +39,9 @@ const Main = () => {
         </div>
         <div>
             <Explore/>
+        </div>
+        <div>
+            <Reviews/>
         </div>
     </div>
   )
