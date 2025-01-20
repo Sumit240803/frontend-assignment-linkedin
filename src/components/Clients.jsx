@@ -3,12 +3,15 @@ import "../assets/components/Clients.css"
 const Clients = () => {
   return (
     <div>
-        <div>
+        <div className='clients-heading'>
             <h1>Our Happy Clients</h1>
             <p>Professionally cultivate one-to-one customer service with robust ideas. Dynamically innovate resource-leveling customer service for state of the art customer service.</p>
         </div>
         <div >
             <img className='clients' src="/clients.png" alt="" />
+        </div>
+        <div>
+            <img className='fill' src="/fill-up.png" alt="" />
         </div>
     </div>
   )
