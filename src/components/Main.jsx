@@ -6,6 +6,7 @@ import Services from './Services'
 import About from './About'
 import WhyRegisterKaro from './WhyRegisterKaro'
 import IntroVide from './IntroVide'
+import Clients from './Clients'
 
 const Main = () => {
   return (
@@ -30,6 +31,9 @@ const Main = () => {
         </div>
         <div>
             <IntroVide/>
+        </div>
+        <div>
+            <Clients/>
         </div>
     </div>
   )

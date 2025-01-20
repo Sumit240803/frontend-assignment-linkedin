@@ -4,7 +4,7 @@ const IntroVide = () => {
   return (
     <div className='vid-component'>
         <div className='heading'>
-            <div>
+            <div className='main-heading-section'>
 
             <h1>Our Video Introductions</h1>
             <p>Velit purus egestas tellus phasellus. Mattis eget sed faucibus magna vulputate pellentesque a diam tincidunt apis dui.</p>
@@ -13,9 +13,9 @@ const IntroVide = () => {
                 <div className='vid-main-section-1'>
 
                 <div>
-                    <div><img src="/icon1.png" alt="" /></div>
+                    <img className='icon-img' src="/icon1.png" alt="" />
                 </div>
-                <div>
+                <div className='main-section-info'>
                     <h3>Explore ideas together</h3>
                     <p>Engage audience segments and finally create actionable insights. Amplify vertical integration.</p>
                 </div>
@@ -23,9 +23,9 @@ const IntroVide = () => {
                 <div className='vid-main-section-1'>
 
                 <div>
-                    <div><img src="/icon1.png" alt="" /></div>
+                    <img className='icon-img' src="/icon1.png" alt="" />
                 </div>
-                <div>
+                <div className='main-section-info'>
                     <h3>Explore ideas together</h3>
                     <p>Engage audience segments and finally create actionable insights. Amplify vertical integration.</p>
                 </div>
@@ -33,7 +33,7 @@ const IntroVide = () => {
             </div>
         </div>
         <div className='vid-section'>
-            <img src="/vid-image.png" alt="" />
+            <img className='vid-img' src="/vid-image.png" alt="" />
         </div>
     </div>
   )

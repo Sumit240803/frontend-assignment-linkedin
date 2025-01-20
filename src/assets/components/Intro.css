@@ -2,12 +2,35 @@
     background-color: #1C4670;
     display: flex;
     color: white;
-    align-items: center;
+    
 }
 
 .vid-main-section-1{
     display: flex;
+    padding: 20px;
 }
-p{
+
+
+.main-heading-section{
+    padding: 20px;
+    margin-top: 50px;
+}
+.main-heading-section p{
+    color:#AAB5CD;
+}
+.main-heading-section p{
+    margin-top: 30px;
+}
+
+.vid-img{
+    padding: 50px;
+}
+
+.icon-img{
+    padding-right: 10px;
+}
+
+.main-section-info p{
+    margin-top: 10px;
     color:#AAB5CD;
 }
