@@ -9,6 +9,8 @@ import IntroVide from './IntroVide'
 import Clients from './Clients'
 import Explore from './Explore'
 import Reviews from './Reviews'
+import Faq from './FAQ'
+import Download from './Download'
 
 const Main = () => {
   return (
@@ -42,6 +44,15 @@ const Main = () => {
         </div>
         <div>
             <Reviews/>
+        </div>
+        <div>
+        <Faq/>
+        </div>
+        <div>
+            <Download/>
+        </div>
+        <div style={{"overflow-x" : "hidden"}}>
+            <img src="/why.png" alt="" />
         </div>
     </div>
   )
