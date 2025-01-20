@@ -1,0 +1,13 @@
+.vid-component {
+    background-color: #1C4670;
+    display: flex;
+    color: white;
+    align-items: center;
+}
+
+.vid-main-section-1{
+    display: flex;
+}
+p{
+    color:#AAB5CD;
+}

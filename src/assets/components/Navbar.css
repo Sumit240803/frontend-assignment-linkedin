@@ -1,0 +1,108 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+  }
+  
+  /* Top Navigation */
+  .top-nav {
+    background-color: #1C4670;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color: white;
+    padding: 5px 20px;
+    gap: 15px; /* Space between items */
+  }
+  
+  .top-nav p {
+    margin: 0;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  
+  .top-nav p:hover {
+    text-decoration: underline;
+  }
+  
+  /* Main Navigation */
+  .main-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    box-shadow: 1px 1px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+  }
+  
+  .logo {
+    width: 200px;
+    height: auto;
+  }
+  
+  .right-nav {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Space between items */
+  }
+  
+  .right-nav p {
+    margin: 0;
+    font-size: 16px;
+    color: #333;
+    cursor: pointer;
+  }
+  
+  .right-nav p:hover {
+    color: #1C4670;
+    font-weight: bold;
+  }
+  
+  .right-nav img {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+  }
+  
+  .right-nav button {
+    background-color: orange;
+    border: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .right-nav button:hover {
+    background-color: darkorange;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .top-nav {
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      text-align: center;
+    }
+  
+    .main-nav {
+      flex-wrap: wrap;
+      gap: 10px;
+      text-align: center;
+    }
+  
+    .right-nav {
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+    }
+  
+    .logo {
+      width: 150px;
+    }
+  }
+  

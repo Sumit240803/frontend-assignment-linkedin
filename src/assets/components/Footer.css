@@ -1,0 +1,10 @@
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 100px;
+}
+.footer h1{
+    padding-bottom: 50px;
+}
